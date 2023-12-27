@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- my Library -->
+    <link rel="stylesheet" href="./grid.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        text-align: center;
+      }
+
+      .course-item {
+        background-color: orange;
+        height: 260px;
+      }
+      h1 {
+        color: #fff;
+        margin: 0;
+        line-height: 260px;
+      }
+      .category {
+        background-color: green;
+        height: 260px;
+      }
+      ul {
+        margin-top: 0;
+      }
+      @media (max-width: 1023px) {
+        .course-item {
+          margin-bottom: 16px;
+        }
+      }
+
+      .test-offset {
+        background-color: rgb(240, 201, 130);
+      }
+      .test-gutters{
+        background-color: rgb(228, 198, 148);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid wide container">
+      <div class="row">
+        <div class="col l-3 m-0 c-0">
+          <div class="category">
+            <ul>
+              <li>Javascript</li>
+              <li>HTML, CSS</li>
+              <li>Java</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col l-9 m-12 c-12">
+          <div class="row">
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 1</h1>
+              </div>
+            </div>
+
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 2</h1>
+              </div>
+            </div>
+
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 3</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="grid container test-offset">
+      <div class="row">
+        <div class="col l-6 l-o-3 m-8 m-o-2 c-12">
+          <div class="course-item">
+            <h1>course-item</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="grid container test-offset">
+      <div class="row">
+        <div class="col l-3 m-3 l-o-6 m-o-3">
+          <div class="course-item">
+            <h1>course-item</h1>
+          </div>
+        </div>
+        <div class="col l-3 m-3">
+          <div class="course-item">
+            <h1>course-item</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="grid wide container test-gutters">
+      <div class="row no-gutters">
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 1</h1>
+          </div>
+        </div>
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 2</h1>
+          </div>
+        </div>
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 3</h1>
+          </div>
+        </div>
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 4</h1>
+          </div>
+        </div>
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 5</h1>
+          </div>
+        </div>
+        <div class="col l-4 m-4 c-6">
+          <div class="course-item">
+            <h1>Column 6</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
